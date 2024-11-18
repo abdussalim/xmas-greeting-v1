@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes fall {
+  0% {
+    transform: translateY(-10vh) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.5s ease-out forwards;
+}
+
+@layer utilities {
+  .animate-fall-1 { animation: fall 3s linear infinite; }
+  .animate-fall-2 { animation: fall 4s linear infinite; }
+  .animate-fall-3 { animation: fall 3.5s linear infinite; }
+  .animate-fall-4 { animation: fall 4.5s linear infinite; }
+  .animate-fall-5 { animation: fall 5s linear infinite; }
+  .animate-fall-6 { animation: fall 3.2s linear infinite; }
+  .animate-fall-7 { animation: fall 4.2s linear infinite; }
+  .animate-fall-8 { animation: fall 3.7s linear infinite; }
+  .animate-fall-9 { animation: fall 4.7s linear infinite; }
+  .animate-fall-10 { animation: fall 5.2s linear infinite; }
+  .animate-fall-11 { animation: fall 3.3s linear infinite; }
+  .animate-fall-12 { animation: fall 4.3s linear infinite; }
+  .animate-fall-13 { animation: fall 3.8s linear infinite; }
+  .animate-fall-14 { animation: fall 4.8s linear infinite; }
+  .animate-fall-15 { animation: fall 5.3s linear infinite; }
+  .animate-fall-16 { animation: fall 3.4s linear infinite; }
+  .animate-fall-17 { animation: fall 4.4s linear infinite; }
+  .animate-fall-18 { animation: fall 3.9s linear infinite; }
+  .animate-fall-19 { animation: fall 4.9s linear infinite; }
+  .animate-fall-20 { animation: fall 5.4s linear infinite; }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1f2937;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #374151;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4b5563;
+}
